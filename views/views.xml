@@ -1,0 +1,80 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="comisionesgepe.form">
+      <field name="name">comisionesgepe</field>
+      <field name="model">comisionesgp</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+                <!--<field name="clie_id"/>-->
+                <field name="vend_id"/>
+                <field name="porc_com"/>
+                <field name="fijo_com_recibo"/>
+                <field name="porc_com_factura"/>
+                <field name="fijo_com_factura"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="comisionesgepe.tree">
+      <field name="name">comisionesgepetree</field>
+        <field name="model">comisionesgp</field>
+        <field name="arch" type="xml">
+            <tree>
+           <!--<field name="clie_id"/>-->
+            <field name="vend_id"/>
+            <field name="porc_com"/>
+            <field name="fijo_com_recibo"/>
+            <field name="porc_com_factura"/>
+            <field name="fijo_com_factura"/>
+            </tree>
+      </field>
+    </record>
+
+
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.action_window">
+      <field name="name">/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe window</field>
+      <field name="res_model">/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe./home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.action_server">
+      <field name="name">/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe server</field>
+      <field name="model_id" ref="model_/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe_/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe" id="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.menu_1" parent="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.menu_root"/>
+    <menuitem name="Menu 2" id="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.menu_2" parent="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.menu_1_list" parent="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.menu_1"
+              action="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.action_window"/>
+    <menuitem name="Server to list" id="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe" parent="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.menu_2"
+              action="/home/nilce/pycharm_projects/odoo-test/venv/odoo13/misapps/comisionesgepe.action_server"/>
+-->
+  </data>
+</odoo>

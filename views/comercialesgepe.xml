@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ <record id="id_vendedor" model="ir.ui.view">
+        <field name="name">res.users.comercial</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook[last()]" position="inside">
+                <page string="Gestión de Comisiones" name="gestion_de_comisiones">
+                    <group>
+                     <field name = "id_vendedor"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
